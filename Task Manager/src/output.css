@@ -186,9 +186,6 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
-  .mb-2\.5 {
-    margin-bottom: calc(var(--spacing) * 2.5);
-  }
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
@@ -384,49 +381,13 @@
   .underline {
     text-decoration-line: underline;
   }
-  .shadow-\[0px_0px_37px_0px_rgba\(0\,_0\,_0\,_0\.0\)\] {
-    --tw-shadow: 0px 0px 37px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.0));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[0px_0px_37px_0px_rgba\(0\,_0\,_0\,_0\.1\)\] {
-    --tw-shadow: 0px 0px 37px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.1));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
   .shadow-\[0px_0px_37px_0px_rgba\(0\,_0\,_0\,_0\.05\)\] {
     --tw-shadow: 0px 0px 37px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.05));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[0px_0px_37px_0px_rgba\(0\,_0\,_0\,_0\.15\)\] {
-    --tw-shadow: 0px 0px 37px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.15));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[0px_0px_37px_0px_rgba\(0\,_0\,_0\,_0\.25\)\] {
-    --tw-shadow: 0px 0px 37px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.25));
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .shadow-\[0px_0px_37px_0px_rgba\(0\,_0\,_0\,_0\.125\)\] {
-    --tw-shadow: 0px 0px 37px 0px var(--tw-shadow-color, rgba(0, 0, 0, 0.125));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .hover\:size-3\.5 {
-    &:hover {
-      @media (hover: hover) {
-        width: calc(var(--spacing) * 3.5);
-        height: calc(var(--spacing) * 3.5);
-      }
-    }
-  }
-  .hover\:border {
-    &:hover {
-      @media (hover: hover) {
-        border-style: var(--tw-border-style);
-        border-width: 1px;
-      }
-    }
   }
   .hover\:border-black {
     &:hover {
