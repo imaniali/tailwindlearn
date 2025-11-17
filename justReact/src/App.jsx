@@ -1,43 +1,53 @@
 
-function taskItem (taskName) {
+function addNumberBtn (num) {
   return (
     <>
-    <div className="flex justify-between items-center flex-row px-1 py-5 border-b border-dashed border-gray-300 ">
-        <input type="checkbox" className=""/>
-        <h6 className="line-through text-gray-500">{taskName}</h6>
-        <button className="px-5 py-1 rounded-md bg-red-600 text-white hover:bg-red-500">Remove</button>
-    </div> 
+    <button className="text-white bg-indigo-300 px-7 pt-3.5 pb-5 rounded-xl text-2xl text-gray-800 hover:bg-indigo-400 ">{num}</button>
     </>
   )
 }
 
 function App() {
 
+  let numButtons = []
+  for (let i = 0; i < 10; i++) {
+    numButtons.push(
+      <button
+    key={i}
+    className="text-white bg-indigo-300 px-7 pt-3.5 pb-5 rounded-xl text-2xl text-gray-800 hover:bg-indigo-400 "
+    >
+      {i}
+    </button>
+    )
+  }
+
   return (
     <>
-    <div id="outerContainer" className="flex items-center justify-center min-h-screen ">
-      <div id="mainContainer" className="bg-white px-12 py-10 rounded-md justify-center shadow-[0px_0px_37px_0px_rgba(0,_0,_0,_0.05)]">
+    <div id="outerContainer" className="flex items-center justify-center min-h-screen min-w-screen">
+      <div id="mainContainer" className="bg-white px-8 py-8 rounded-2xl justify-center min-w-sm shadow-[0px_0px_37px_0px_rgba(0,_0,_0,_0.05)]">
 
-        <h1 className="text-4xl text-blue-500 font-bold text-center mb-10">Task Manager</h1>
-        <div id="topBarContainer" className="flex justify-between gap-5 border-b border-solid border-gray-800 pb-5">
-          <input type="text" placeholder="What needs to be done?" name="taskInput" id="taskInput" className="border-2 border-gray-200 px-3 py-2 rounded-md hover:border-black text-left "/>
           
-          <button id="addBtn"
-          onClick={}
-          className="px-5 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-500">Add Task</button>
-        </div>
+          <h3 className="bg-gray-100 text-4xl font-bold px-2 pt-2.5 pb-4 text-right mb-6 rounded-xl
+          shadow-[inset_0px_0px_10px_0px_rgba(0,_0,_0,_0.07)]">9.3 + 1.7</h3>
 
 
-        
+          <div className="flex justify-between mb-3">
+              <button className=" bg-amber-400 px-6.5 pt-3.5 pb-5 rounded-xl text-2xl font-black text-gray-800 hover:bg-black hover:text-amber-400 ">+</button>
+              <button className=" bg-amber-400 px-7 pt-3.5 pb-5 rounded-xl text-2xl font-black text-gray-800 hover:bg-black hover:text-amber-400 ">-</button>
+              <button className=" bg-amber-400 px-6.5 pt-3.5 pb-5 rounded-xl text-2xl font-black text-gray-800 hover:bg-black hover:text-amber-400 ">×</button>
+              <button className=" bg-amber-400 px-6.5 pt-3.5 pb-5 rounded-xl text-2xl font-black text-gray-800 hover:bg-black hover:text-amber-400 ">÷</button>
+          </div>
+          
+          
+          <div className="grid grid-cols-4 grid-rows-3 gap-3 justify-between mb-3">
+            {numButtons}
+            <button className="text-white bg-indigo-300 px-7 pt-3.5 pb-5 rounded-xl text-2xl text-gray-800 hover:bg-indigo-400 ">.</button>
+            <button className="text-white bg-red-500 px-7 pt-3.5 pb-5 rounded-xl text-2xl text-gray-800 hover:bg-red-600 ">C</button>
+            <button className="col-span-4 text-white bg-emerald-400 px-7 pt-3.5 pb-5 rounded-xl text-2xl text-gray-800 hover:bg-emerald-500 ">=</button>
+          </div>
 
-        {/* اینجا تسک ها اضافه میشن */}
-        <div id="taskListContainer">
 
-          {taskItem("Task Ali")}
-          {taskItem("Task Abolfazl")}
-          {taskItem("Task Sevom")}
-            
-        </div>
+
       </div>
     </div>
 
