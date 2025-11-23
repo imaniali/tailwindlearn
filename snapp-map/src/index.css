@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+}
+
+/* در ابتدای src/index.css */
+@font-face {
+  font-family: 'IranSansX'; 
+  src: url('./assets/IRANSansX-Regular.woff') format('woff'); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IranSansX'; 
+  src: url('./assets/IRANSansX-Bold.woff') format('woff'); 
+  font-weight: Bold;
+  font-style: normal;
+}
+
+/* سپس دستورات Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
